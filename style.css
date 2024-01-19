@@ -1,0 +1,189 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#bggrad1 {
+    background-image: linear-gradient(to bottom, blue, hotpink)
+}
+
+#headerfont {
+    font-family: "farmhand", serif;
+    text-align: center;
+    font-style: normal;
+    
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 10px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.reset-this-root {
+    all: initial;
+}
+
+/*this section is for the background elements*/
+
+#one {
+    position: absolute;
+    left: 40px;
+    top: 22vh;
+}
+
+#two {
+    position: absolute;
+    right: 40px;
+    top: 50vh;
+    z-index: -2;
+}
+
+#three {
+    position: absolute;
+    right: 40px;
+    top: 130vh;
+    z-index: -2;
+}
+
+#four {
+    position: absolute;
+    left: 1000px;
+    top: 200vh;
+    z-index: -2;
+}
+
+#five {
+    position: absolute;
+    z-index: -2;
+    right: 1200px;
+    top: 250vh;
+}
+
+#six {
+    position: absolute;
+    z-index: -2;
+    left: 1100px;
+    top: 310vh;
+}
+
+/*section end*/
+
+/*this section is for the buttons*/
+
+.scrollon {
+    width: 150px;
+    margin-left: 250px;
+}
+
+.stereo {
+    width: 200px;
+}
+
+.utube {
+    width: 160px;
+    margin-left: 470px;
+    margin-bottom: 10px;
+}
+
+.inttype {
+    margin-left: 800px;
+    margin-bottom: 0;
+    width: 600px;
+}
+
+#buttons {
+    position: fixed;
+    bottom: 2vh;
+    left: 20px;
+    z-index: 2;
+    padding: 5px;
+    border: 0;
+}
+
+#audioplayer {
+    position: fixed;
+    bottom: 2vh;
+    left: 20px;
+    width: 150px;
+    height: 20px;
+    z-index: 3;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+/*section end*/
+
+main {
+    position: sticky;
+    margin-bottom: 200px;
+}
+
+p {
+    color: white;
+}
+
+.pixel {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.int {
+    position: relative;
+    left: 20px;
+    font-family: "cake-mono", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.align-right {
+    text-align: right;
+    line-height: 25px;
+}
+
+span {
+    background-color: yellow;
+    padding: 7px;
+}
+
+.marquee {
+    position: absolute;
+    color: yellow;
+    left: 0px;
+    top: 295.5px;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+#top, #bottom, #left, #right {
+    z-index: 1;
+	position: fixed;
+	}
+	#left, #right {
+		top: 25px; bottom: 150px;
+		width: 18px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 150px; }
